@@ -1,0 +1,249 @@
+main {
+  margin-left: 170px;
+}
+.col {
+  width: 28%;
+}
+
+.card {
+  height: 350px;
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  main {
+    margin-left: 20px;
+  }
+  .col {
+    width: 47%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .image {
+    position: relative;
+    width: 50%;
+  }
+
+  img {
+    opacity: 1;
+    display: block;
+    width: 360px;
+    height: 200px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .card {
+    padding: 20px;
+    height: 340px;
+    margin-left: 40px;
+  }
+}
+
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    margin-left: 10px;
+  }
+  .col {
+    width: 48%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+  }
+  .image {
+    position: relative;
+    width: 50%;
+  }
+
+  img {
+    opacity: 1;
+    display: block;
+    width: 260px;
+    height: 200px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .card {
+    padding: 20px;
+    height: 360px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    margin-left: 5px;
+  }
+  .col {
+    width: 90%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    float: none;
+  }
+  .image {
+    position: relative;
+    width: 50%;
+  }
+
+  img {
+    opacity: 1;
+    display: block;
+    width: 225px;
+    height: 200px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .card {
+    padding: 20px;
+    height: 360px;
+  }
+}
+@media screen and (min-width: 412px) and (max-width: 414px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
+  main {
+    margin-left: 5px;
+  }
+
+  .col {
+    width: 100%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    float: none;
+  }
+  .image {
+    position: relative;
+    width: 50%;
+  }
+
+  img {
+    opacity: 1;
+    display: block;
+    width: 290px;
+    height: 200px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .card {
+    padding: 20px;
+    height: 350px;
+  }
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    margin-left: 5px;
+  }
+
+  .col {
+    width: 95%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    float: none;
+  }
+  .image {
+    position: relative;
+    width: 50%;
+  }
+
+  img {
+    opacity: 1;
+    display: block;
+    width: 215px;
+    height: 200px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .card {
+    padding: 20px;
+    height: 360px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 411px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    margin-left: 5px;
+  }
+
+  .col {
+    width: 95%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    float: none;
+  }
+  .image {
+    position: relative;
+    width: 50%;
+  }
+
+  img {
+    opacity: 1;
+    display: block;
+    width: 300px;
+    height: 200px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .card {
+    padding: 20px;
+    height: 340px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  main {
+    margin-left: 5px;
+  }
+
+  .col {
+    width: 98%;
+    display: block;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    float: none;
+  }
+  .image {
+    position: relative;
+    width: 50%;
+  }
+
+  img {
+    opacity: 1;
+    display: block;
+    width: 275px;
+    height: 200px;
+    transition: 0.5s ease;
+    backface-visibility: hidden;
+  }
+  .card {
+    padding: 16px;
+    height: 340px;
+  }
+}

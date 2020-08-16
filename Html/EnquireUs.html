@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Abel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/Style.css">
+    <link rel="stylesheet" href="../css/EnquireUs.css">
+
+    <title>WayFar</title>
+</head>
+
+<body>
+        <div class="nav">
+                <input type="checkbox" id="nav-check">
+                <div class="nav-header">
+                    <div class="nav-title">
+                        WayFar
+                    </div>
+                </div>
+                <div class="nav-btn">
+                    <label for="nav-check">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </div>
+        
+                <div class="nav-links">
+                    <li class="navItems">
+                        <a href="./Home.html">HOME</a>
+                    </li>
+                    <li class="navItems">
+                        <a href="./PopularDestinations.html">POPULAR DESTINATIONS</a>
+                    </li>
+                    <li class="navItems">
+                        <a href="./TourPackages.html">TOUR PACKAGES</a>
+                    </li>
+                    <li class="navItems">
+                        <a href="./Offers.html">OFFERS</a>
+                    </li>
+                    <li class="active">
+                        <a href="./EnquireUs.html">ENQUIRE US</a>
+                    </li>
+                    <li class="navItems">
+                        <a href="./Gallery.html">GALLERY</a>
+                    </li>
+                </div>
+            </div>
+    <main>
+        <div>
+            <div class="head">Send us a query</div>
+            <br>
+            <form class="content" action="">
+                <table>
+                    <tr>
+                        <td>
+                            <label for="">Name</label>
+                            <br>
+                            <input type="text" required placeholder="Ex : John Davis" pattern="^[A-Za-z\s]+$">
+                        </td>
+                        <td>
+                            <label for="">Email Id</label>
+                            <br>
+                            <input type="email" placeholder="Ex : john.davis@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+                        </td>
+                        <td>
+                            <label for="">Destination</label>
+                            <br>
+                            <input list="city" placeholder="Ex : India">
+                            <datalist id="city">
+                                <option value="India">
+                                    <option value="France">
+                                        <option value="Singapore">
+                                            <option value="Thailand">
+                                                <option value="United Arab Emirates">
+                                                    <option value="United States of America">
+                            </datalist>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">No. of Travellers</label>
+                            <br>
+                            <input type="number" required placeholder="Adult" min=0>
+                            <input type="number" required placeholder="Children" min=0>
+                        </td>
+                        <td>
+                            <label for="">Phone Number</label>
+                            <br>
+                            <select class="non">
+                                <option value="" selected disabled>Code</option>
+                                <option value="+213">+213</option>
+                                <option value="+91">+91</option>
+                                <option value="+244">+244</option>
+                                <option value="+61">+61</option>
+                                <option value="+973">+973</option>
+                            </select>
+                            <input type="tel" pattern='^[0-9]{10}$' required placeholder="Ex : 9897979086">
+                        </td>
+                        <td>
+                            <label for="">Start & End dates of Trip</label>
+                            <br>
+                            <input type="date" required>
+                            <input type="date" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <label for="">Add your Queries</label>
+                            <br>
+                            <textarea rows="4" cols="22" required></textarea>
+                        </td>
+                        <td>
+                            <label for="" class="check">Send notifications</label>
+                            <br>
+                            <input type="checkbox" />via Email
+                            <input type="checkbox" />via SMS
+                        </td>
+                    </tr>
+                    <tr>
+
+                    </tr>
+                </table>
+                <button type="submit">Raise your query</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <span> Copyright @ WayFar, 2020 </span>
+        <span class="links">
+            <a href="./ContactUs.html">Contact Us</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="./TermsandCondition.html">Terms & Conditions</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="./AboutUs.html">About Us</a>
+        </span>
+    </footer>
+</body>
+
+</html>

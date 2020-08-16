@@ -1,0 +1,516 @@
+* {
+    box-sizing: border-box;
+}
+  
+body {
+    margin: 0px;
+}
+
+.navItems:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px white;
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+  transform-origin:50% 
+}
+
+.navItems:hover:after { 
+  transform: scaleX(1);
+  transform-origin:50%;
+}
+
+.active{
+  font-family: 'Montserrat', sans-serif;   
+  font-size:14px;
+  position: relative;
+  display:inline-block;
+  border-bottom: solid 1px white; 
+  margin: 0 auto; 
+  line-height: 17px;
+}
+
+
+@font-face{
+    font-family: navBrandFont;
+    src:url(../Fonts/blackjack.otf);
+}
+
+/* Footer Stylings */
+
+footer, main:after {
+  height: 30px; 
+  bottom: 0;
+}
+
+footer {
+  padding-top: 10px;
+  padding-left: 20px;
+  background-size: cover;
+  font-family: 'Montserrat', sans-serif;  
+  color:white;
+  font-size: 12px;
+  background-color:rgb(121,62,62);
+  margin-top: 107px;
+} 
+
+footer a{
+  color: white;
+  font-size: 12px;
+}
+
+.links{
+  float:right;
+  padding-right: 20px;
+}
+
+/* Navbar Stylings */
+  
+.nav {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(121,62,62);
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+    z-index:1200;
+}
+  
+.nav > .nav-header {
+    display: inline;
+}
+  
+  .nav > .nav-header > .nav-title {
+    display: inline-block;
+    font-size: 25px;
+    color: #fff;
+    font-family: navBrandFont;
+    padding-top: 5px;
+  }
+  
+  .nav > .nav-btn {
+    display: none;
+  }
+  
+  .nav > .nav-links {
+    display: inline;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif; 
+    float: right;
+  }
+
+  
+  .nav > .nav-links >li {
+    display: inline-block;
+    padding-top: 15px;  
+    text-align: center;
+    margin-left:25px;
+    margin-right:25px;
+
+  }
+  .nav > .nav-links >li >a{
+    text-decoration: none;
+    color: #efefef;  
+    text-align: center;
+  }
+    
+  .nav > #nav-check {
+    display: none;
+  }
+  
+  @media screen and (min-width:769px) and (max-width:1024px){
+    .nav > .nav-links >li> a {
+      display: inline-block;
+      text-decoration: none;
+      color: #efefef;
+      /* padding-left: 10px;
+      padding-right: 10px; */
+      padding-top: 0px;
+      text-align: center;
+  
+    }
+    .nav > .nav-links >li{
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
+    footer{
+      margin-top:626px;
+          }
+    footer, main:after {
+      height: 40px; 
+      bottom: 0;
+  }
+    footer  span{
+      margin-left: 10px;
+      font-size: 18px
+  }
+  footer  span.links {
+      margin-left: -80px;
+      font-size: 24px;
+      text-align: center;
+  }
+  }
+  @media screen and (min-width:415px) and (max-width:768px){
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        background-color: rgb(121,62,62);
+        top: 50px;
+        left: 0px;
+        font-family: 'Montserrat', sans-serif; 
+      }
+      .nav > .nav-links > li {
+        display: block;
+        width: 100%;
+        margin-left:0px;
+        margin-right:0px;
+        
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(50vh - 290px);
+        overflow-y: auto;
+      }
+      footer, main:after {
+        height: 40px; 
+        bottom: 0;
+    }
+    footer{
+margin-top:445px;
+    }
+      footer  span{
+        margin-left: 10px;
+        font-size: 16px
+    }
+    footer  span.links {
+        margin-left: -80px;
+        font-size: 20px;
+    }
+  }
+ 
+  @media screen and (min-width:412px) and (max-width:414px){
+    .nav > .nav-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    .nav > .nav-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgb(121,62,62);
+    }
+    .nav > .nav-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: rgb(121,62,62);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    .nav > .nav-links > li {
+      display: block;
+      width: 100%;
+      margin-left:0px;
+      margin-right:0px;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(50vh - 150px);
+      overflow-y: auto;
+    }
+    footer{
+      margin-top:10px;
+          }
+    footer, main:after {
+      height: 60px; 
+      bottom: 0;
+  }
+    footer  span{
+      margin-left: 108px;
+      font-size: 13px
+  }
+  footer  span.links {
+      margin-left: -100px;
+      font-size: 28px;
+  }
+  }
+  @media screen and (min-width:376px) and (max-width:411px){
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        background-color: rgb(121,62,62);
+        top: 50px;
+        left: 0px;
+        font-family: 'Montserrat', sans-serif; 
+      }
+      .nav > .nav-links > li {
+        display: block;
+        margin-left:0px;
+        margin-right:0px;
+        width: 100%;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(50vh - 130px);
+        overflow-y: auto;
+      }
+      footer{
+        margin-top:10px;
+            }
+      footer, main:after {
+        height: 60px; 
+        bottom: 0;
+    }
+      footer  span{
+        margin-left: 100px;
+        font-size: 13px;
+    }
+    footer  span.links {
+        margin-left: -160px;
+        font-size: 24px;
+    }
+  }
+  @media screen and (min-width:361px) and (max-width:375px){
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        background-color: rgb(121,62,62);
+        top: 50px;
+        left: 0px;
+        font-family: 'Montserrat', sans-serif; 
+      }
+      .nav > .nav-links > li {
+        display: block;
+        width: 100%;
+        margin-left:0px;
+        margin-right:0px;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(50vh - 120px);
+        overflow-y: auto;
+      }
+      footer, main:after {
+        height:43px; 
+        bottom: 0;
+    }
+      footer  span{
+        margin-left: 95px;
+    }
+    footer{
+      margin-top:10px;
+          }
+    footer  span.links {
+        margin-left: -120px;
+        font-size: 14px;
+    }
+  }
+  @media screen and (min-width:321px) and (max-width:360px){
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        background-color: rgb(121,62,62);
+        top: 50px;
+        left: 0px;
+        font-family: 'Montserrat', sans-serif; 
+      }
+      .nav > .nav-links > li {
+        display: block;
+        width: 100%;
+        margin-left:0px;
+        margin-right:0px;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(50vh - 90px);
+        overflow-y: auto;
+      }
+      footer{
+        margin-top:10px;
+            }
+      footer, main:after {
+        height:42px; 
+        bottom: 0;
+    }
+    footer  span{
+        margin-left: 80px;
+    }
+    footer  span.links {
+        margin-left: -100px;
+        font-size: 10px;
+    } 
+  }
+  @media screen and (min-width:0px) and (max-width:320px){
+    .nav > .nav-btn {
+        display: inline-block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+      }
+      .nav > .nav-btn > label {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        padding: 13px;
+      }
+      .nav > .nav-btn > label > span {
+        display: block;
+        width: 25px;
+        height: 10px;
+        border-top: 2px solid #eee;
+      }
+      .nav > .nav-links {
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 0px;
+        transition: all 0.3s ease-in;
+        overflow-y: hidden;
+        background-color: rgb(121,62,62);
+        top: 50px;
+        left: 0px;
+        font-family: 'Montserrat', sans-serif; 
+      }
+      .nav > .nav-links > li {
+        display: block;
+        width: 100%;
+        margin-left:0px;
+        margin-right:0px;
+      }
+      .nav > #nav-check:not(:checked) ~ .nav-links {
+        height: 0px;
+      }
+      .nav > #nav-check:checked ~ .nav-links {
+        height: calc(50vh - 70px);
+        overflow-y: auto;
+      }
+      footer{
+        margin-top:10px;
+            }
+      footer, main:after {
+        height:45px; 
+        bottom: 0;
+    }
+
+    footer  span{
+        margin-left: 60px;
+        font-size: 11px;
+    }
+    footer  span.links {
+        margin-left: -90px;
+        font-size: 10px;
+    }
+  }

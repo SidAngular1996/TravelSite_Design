@@ -1,0 +1,113 @@
+* {
+	margin: 0px;
+}
+
+header{
+    height: 55px;
+    padding-top: 5px;
+}
+main{
+    margin-top:20px;
+}
+
+.content{
+    margin-bottom:20px;
+    margin-right:100px;
+    margin-top: 25px;
+    margin-left:100px;
+    line-height: 22px;
+    text-align: justify;
+    color: rgb(121,62,62);
+    font-family: 'Montserrat', sans-serif;   
+    font-size:14px;
+}
+
+ol li{
+    line-height: 30px;
+}
+
+.head{
+    font-weight: 600;
+    font-size:16px;
+}
+footer{
+    margin-top:102px;
+}
+/* Responsive  */
+
+@media screen and (min-width:0px) and (max-width:320px){
+    .content{
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:0px;
+    }
+    footer{
+        margin-top:10px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:360px){
+    .content{
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:0px;
+    }
+    footer{
+        margin-top:10px;
+    }
+}
+
+@media screen and (min-width:361px) and (max-width:375px){
+    .content{
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:0px;
+    }
+    footer{
+        margin-top:10px;
+    }
+}
+
+@media screen and (min-width:376px) and (max-width:411px){
+    .content{
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:0px;
+    }
+    footer{
+        margin-top:10px;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width:414px){
+    .content{
+        margin-left:20px;
+        margin-right:20px;
+        margin-top:0px;
+    }
+    footer{
+        margin-top:10px;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width:768px){
+    .content{
+        margin-left:50px;
+        margin-right:50px;
+        margin-top:20px;
+    }
+    footer{
+        margin-top:368px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    .content{
+        margin-left:50px;
+        margin-right:50px;
+        margin-top:20px;
+    }
+    footer{
+        margin-top:776px;
+    }
+}

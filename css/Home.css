@@ -1,0 +1,804 @@
+* {
+    margin: 0;
+}
+/* Cards */
+
+footer{
+    margin-top:20px;
+}
+
+main{
+    margin-top:50px;
+}
+
+.cardTable{
+    border-collapse: separate;
+    border-spacing: 30px 0;
+}
+
+.cardHolder{
+    margin-top: 60px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-bottom: 30px;
+}
+
+td h2{
+    padding-top: 60px;
+    color: white;
+    font-family: 'Abel', sans-serif;
+    font-size: 43px;
+    text-align: center;
+}
+
+.description{
+    padding-top: 30px;
+    font-family: 'Abel', sans-serif;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+td a{
+    text-decoration: none;
+    font-family: 'Abel', sans-serif;
+    color: white;
+}
+
+/* SlideShow Stylings */
+  
+.slideshow {
+    padding-top: 10px;
+    overflow: hidden;
+    height: 500px;
+    width: 1128px;
+    margin: 0 auto;
+}
+  
+.slide-wrapper {
+    width: 5640px;
+    -webkit-animation: slide 18s ease infinite;
+}
+  
+.slide {
+    float: left;
+    height: 500px;
+    width: 1128px;
+}
+  
+.slide:nth-child(1) {
+    background: url(../images/c2.webp) no-repeat center top;
+    background-size:cover;    
+}
+  
+.slide:nth-child(2) {
+    background: url(../images/c1.webp) no-repeat center;
+    background-size:cover;
+}
+  
+.slide:nth-child(3) {
+    background: url(../images/goldengate.webp) no-repeat center;
+    background-size:cover;
+}
+  
+.slide:nth-child(4) {
+    background: url(../images/c6.webp) no-repeat center;
+    background-size:cover;
+}
+
+.slide:nth-child(5) {
+    background: url(../images/c2.jpg) no-repeat center;
+    background-size:cover;
+}
+  
+.slide-number {
+    color: #000;
+    text-align: center;
+    font-size: 10em;
+}
+
+@keyframes slide {
+    10% {margin-left: 0px;}
+    20% {margin-left: -1128px;}
+    30% {margin-left: -1128px;}
+    40% {margin-left: -2256px;}
+    50% {margin-left: -2256px;}
+    60% {margin-left: -3384px;}
+    70% {margin-left: -3384px;}
+    80% {margin-left: -4512px;}
+    100% {margin-left: -4512px;}
+} 
+@keyframes slide1 {
+    10% {margin-left: 0px;}
+    20% {margin-left: -820px;}
+    30% {margin-left: -820px;}
+    40% {margin-left: -1640px;}
+    50% {margin-left: -1640px;}
+    60% {margin-left: -2460px;}
+    70% {margin-left: -2460px;}
+    80% {margin-left: -3280px;}
+    100% {margin-left: -3280px;}
+} 
+@keyframes slide2 {
+    10% {margin-left: 0px;}
+    20% {margin-left: -740px;}
+    30% {margin-left: -740px;}
+    40% {margin-left: -1480px;}
+    50% {margin-left: -1480px;}
+    60% {margin-left: -2220px;}
+    70% {margin-left: -2220px;}
+    80% {margin-left: -2960px;}
+    100% {margin-left: -2960px;}
+}
+@keyframes slide3 {
+    10% {margin-left: 0px;}
+    20% {margin-left: -620px;}
+    30% {margin-left: -620px;}
+    40% {margin-left: -1240px;}
+    50% {margin-left: -1240px;}
+    60% {margin-left: -1860px;}
+    70% {margin-left: -1860px;}
+    80% {margin-left: -2480px;}
+    100% {margin-left: -2480px;}
+}
+@keyframes slide4 {
+    10% {margin-left: 0px;}
+    20% {margin-left: -340px;}
+    30% {margin-left: -340px;}
+    40% {margin-left: -680px;}
+    50% {margin-left: -680px;}
+    60% {margin-left: -1020px;}
+    70% {margin-left: -1020px;}
+    80% {margin-left: -1360px;}
+    100% {margin-left: -1360px;}
+}
+@keyframes slide5 {
+    10% {margin-left: 0px;}
+    20% {margin-left: -340px;}
+    30% {margin-left: -340px;}
+    40% {margin-left: -680px;}
+    50% {margin-left: -680px;}
+    60% {margin-left: -1020px;}
+    70% {margin-left: -1020px;}
+    80% {margin-left: -1360px;}
+    100% {margin-left: -1360px;}
+}
+@keyframes slide6 {
+    10% {margin-left: 0px;}
+    20% {margin-left: -300px;}
+    30% {margin-left: -300px;}
+    40% {margin-left: -600px;}
+    50% {margin-left: -600px;}
+    60% {margin-left: -900px;}
+    70% {margin-left: -900px;}
+    80% {margin-left: -1200px;}
+    100% {margin-left: -1200px;}
+}
+@keyframes slide7 {
+    10% {margin-left: 0px;}
+    20% {margin-left: -290px;}
+    30% {margin-left: -290px;}
+    40% {margin-left: -580px;}
+    50% {margin-left: -580px;}
+    60% {margin-left: -870px;}
+    70% {margin-left: -870px;}
+    80% {margin-left: -1160px;}
+    100% {margin-left: -1160px;}
+}
+@keyframes slide8 {
+    10% {margin-left: 0px;}
+    20% {margin-left: -260px;}
+    30% {margin-left: -260px;}
+    40% {margin-left: -520px;}
+    50% {margin-left: -520px;}
+    60% {margin-left: -780px;}
+    70% {margin-left: -780px;}
+    80% {margin-left: -1040px;}
+    100% {margin-left: -1040px;}
+}
+
+.topA{
+    text-decoration: none;
+}
+
+.top{
+    background-color: rgb(121,62,62);
+    text-decoration: none;
+    width:40px;
+    height: 25px;
+    margin-left:1270px;
+    margin-bottom:20px;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-size:30px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.box{
+    position: relative;
+    display: inline-block;
+    height: 300px; 
+    /* width: 355px; */
+}
+.box .text{
+    position: absolute;
+    z-index: 999;
+    margin: 0px;
+    left: 0;
+    right: 0;
+    top: 0%;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(194, 194, 194, 0.3);
+    height: 300px;
+    /* width: 355px; */
+}
+
+.box .text:hover{
+    background-color: rgba(90, 90, 90, 0.7);
+}
+    
+/* ///////////////////////////Responsive///////////////////////////// */
+
+  @media screen and (max-width:940px) {
+    .slideshow {
+        padding-top: 10px;
+        overflow: hidden;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 450px;
+        width: 740px;
+    }
+    .slide-wrapper {
+        width: 5640px;
+        -webkit-animation: slide2 18s ease infinite;
+    }
+  } 
+
+
+/* Media Queries for Cards */
+
+@media screen and (min-width:0px) and (max-width:320px) {
+    html,body{
+        overflow-x: hidden
+    }
+    td h2{
+        padding-top: 10px;
+        font-size:30px;
+    }
+
+    .description{
+        font-size:17px;
+    }
+    .slideshow {
+        padding-top: 10px;
+        overflow: hidden;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 190px;
+        width: 260px;
+    }
+    .slide-wrapper {
+        width: 5640px;
+        -webkit-animation: slide8 18s ease infinite;
+     }
+
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+
+    .cardTable{
+        border-collapse: separate;
+        border-spacing:0px;
+    }
+
+    .cardHolder{
+        margin-left: 20px;
+        margin-right:0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    
+    table {
+      border: 0;
+    }
+   
+    table tr {
+      display: block;
+    }
+    
+    table td {
+      display: block;
+      margin-top: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .box{
+        width:260px;
+        height: 180px;
+    }
+    .box img{
+        width:260px;
+        height: 180px;
+
+    } 
+    .box .text{
+        height: 180px;
+    }
+  }
+
+
+  @media screen and (min-width:321px) and (max-width: 360px) {
+    html,body{
+        overflow-x: hidden
+    }
+    td h2{
+        padding-top: 20px;
+        font-size:32px;
+    }
+
+    .description{
+        font-size:18px;
+    }
+    .slideshow {
+        padding-top: 10px;
+        overflow: hidden;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 200px;
+        width: 290px;
+    }
+    .slide-wrapper {
+        width: 5640px;
+        -webkit-animation: slide7 18s ease infinite;
+    }
+    .box{
+        position: relative;
+        display: inline-block;
+        height: 300px; 
+        width: 355px;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+    .cardTable{
+        border-collapse: separate;
+        border-spacing:0px;
+    }
+    .cardHolder{
+        margin-left: 0px;
+        margin-right:0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    table {
+      border: 0;
+    }
+    table tr {
+      display: block;
+    }   
+    table td {
+      display: block;
+      margin-top: 6px;
+        margin-left: 35px;
+        margin-right: 10px;
+    }
+    .box{
+        width:290px;
+        height: 200px;
+        
+    }
+    .box img{
+        width:290px;
+        height: 200px;
+    } 
+    .box .text{
+        height: 200px;
+    }
+  }
+
+  
+  @media screen and (min-width:361px) and (max-width: 375px) {
+    html,body{
+        overflow-x: hidden
+    }
+    td h2{
+        padding-top: 20px;
+        font-size:32px;
+    }
+    .description{
+        font-size:18px;
+    }
+    .slideshow {
+        padding-top: 10px;
+        overflow: hidden;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 220px;
+        width: 300px;
+    }
+    .slide-wrapper {
+        width: 5640px;
+        -webkit-animation: slide6 18s ease infinite;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+
+    .cardTable{
+        border-collapse: separate;
+        border-spacing:0px;
+    }
+    .cardHolder{
+        margin-left: 27px;
+        margin-right:0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    table {
+      border: 0;
+    }
+    table tr {
+      display: block;
+    }   
+    table td {
+      display: block;
+      margin-top: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .box{
+        width:300px;
+        height: 200px;
+    }
+    .box img{
+        width:300px;
+        height: 200px;
+    } 
+    .box .text{
+        height: 200px;
+    }
+  }
+
+  @media screen and (min-width:376px) and (max-width: 411px) {
+    html,body{
+        overflow-x: hidden
+    }
+    td h2{
+        padding-top: 20px;
+        font-size:32px;
+    }
+
+    .description{
+        font-size:18px;
+    }
+    .slideshow {
+        padding-top: 10px;
+        overflow: hidden;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 240px;
+        width: 340px;
+    }
+    .slide-wrapper {
+        width: 5640px;
+        -webkit-animation: slide5 18s ease infinite;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+    .cardTable{
+        border-collapse: separate;
+        border-spacing:0px;
+    }
+    .cardHolder{
+        margin-left: 30px;
+        margin-right:0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    table {
+      border: 0;
+    }
+    table tr {
+      display: block;
+    }   
+    table td {
+      display: block;
+      margin-top: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .box{
+        width:330px;
+        height: 200px;
+    }
+    .box img{
+        width:330px;
+        height: 200px;
+    } 
+    .box .text{
+        height: 200px;
+    }
+  }
+
+  @media screen and (min-width:412px) and (max-width: 414px) {
+   html,body{
+       overflow-x: hidden
+   }
+    td h2{
+        padding-top: 20px;
+        font-size:32px;
+    }
+    .description{
+        font-size:18px;
+    }
+    .slideshow {
+        padding-top: 10px;
+        overflow: hidden;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 240px;
+        width: 340px;
+    }
+    .slide-wrapper {
+        width: 5640px;
+        -webkit-animation: slide5 18s ease infinite;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+    .cardTable{
+        border-collapse: separate;
+        border-spacing:0px;
+    }
+    .cardHolder{
+        margin-left: 30px;
+        margin-right:0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    table {
+      border: 0;
+    }
+    table tr {
+      display: block;
+    }   
+    table td {
+      display: block;
+      margin-top: 6px;
+        margin-left: 11px;
+        /* margin-right: 10px; */
+        
+    }
+    .box{
+        height: 200px;
+        width:330px;
+    }
+    .box img{
+        height: 200px;
+        width:100%;
+    } 
+    .box .text{
+        height: 200px;
+    }
+  }
+
+  @media screen and (min-width:415px) and (max-width: 768px) {
+    html,body{
+        overflow-x: hidden
+    }
+     
+    td h2{
+        padding-top: 50px;
+        font-size:40px;
+    }
+    .description{
+        font-size:28px;
+    }
+    .slideshow {
+        padding-top: 10px;
+        overflow: hidden;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 450px;
+        width: 620px;
+    }
+    .slide-wrapper {
+        width: 5640px;
+        -webkit-animation: slide3 18s ease infinite;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+    .cardTable{
+        border-collapse: separate;
+        border-spacing:0px;
+    }
+    .cardHolder{
+        margin-left: 65px;
+        margin-right:0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    table {
+      border: 0;
+    }
+    table tr {
+      display: block;
+    }   
+    table td {
+      display: block;
+      margin-top: 6px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .box{
+        width:615px;
+    }
+    .box img{
+        width:615px;
+    } 
+  }
+
+  @media screen and (min-width:769px) and (max-width: 1024px) {
+    html,body{
+        overflow-x: hidden
+    }
+    td h2{
+        padding-top: 50px;
+        font-size:50px;
+    }
+    .description{
+        font-size:32px;
+    }
+    .slideshow {
+        padding-top: 10px;
+        overflow: hidden;
+        height: 20%;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .slide {
+        float: left;
+        height: 450px;
+        width: 820px;
+    }
+    .slide-wrapper {
+        width: 5640px;
+        -webkit-animation: slide1 18s ease infinite;
+    }
+    table {
+        border-collapse: collapse;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        table-layout: fixed;
+      }
+    .cardTable{
+        border-collapse: separate;
+        border-spacing:0px;
+    }
+    .cardHolder{
+        margin-left: 105px;
+        margin-right:0px;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+    table {
+      border: 0;
+    }
+    table tr {
+      display: block;
+    }   
+    table td {
+      display: block;
+      margin-top: 6px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .box{
+        width:820px;
+    }
+    .box img{
+        width:820px;
+
+    } 
+    .box .text{
+        width:820px;        
+    }
+  }
+
+  @media screen and (min-width:1025px) {
+    html,body{
+        overflow-x: hidden
+    }
+    td h2{
+        padding-top: 50px;
+        font-size:40px;
+    }
+    .description{
+        font-size:20px;
+    }
+    .cardTable{
+        border-collapse: separate;
+        border-spacing: 30px 0;
+    }
+    
+    .cardHolder{
+        margin-top: 60px;
+        margin-left: 100px;
+        margin-right: 80px;
+        margin-bottom: 30px;
+    }
+    .box{
+        width:340px;
+    }
+
+    .box img{
+        width:340px;
+
+    } 
+    .box .text{
+        width:340px;
+    }
+
+  }

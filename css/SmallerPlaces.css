@@ -1,0 +1,230 @@
+iframe{
+    width: 680px;
+    height: 400px;
+    margin-left:50px; 
+    border: 2px solid white;
+}
+  
+body{
+    background-image:url("../images/location\ pin.jpeg");
+    background-size: cover;
+}
+.head{
+  
+    font-weight: 600;
+    font-size:16px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+.head a{
+    text-decoration: none;
+  }
+  .head a:hover{
+    border-bottom: solid 1px white;
+  }
+  .head a:visited{
+    color: white;
+  }
+table{
+    margin-top:60px;
+    margin-left:120px;
+}
+
+.description{
+    height: 380px;
+    color: white;
+    width:400px;
+    font-family:'Montserrat', sans-serif;
+    line-height: 25px;
+    text-align: justify;
+    margin: 25px;
+    font-size: 13px;
+}
+
+@media screen and (min-width:0px) and (max-width:320px){
+    table{
+    margin-left:0px;
+    margin-top:0px;
+
+    }
+    iframe{
+        width: 285px;
+        height: 200px;
+        margin-left:15px;
+        margin-top:100px; 
+        border: 2px solid white;
+    }
+    table td{
+        display: block;
+    }
+    .description{
+        width: 295px;
+        margin:10px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:360px){
+    table{
+    margin-left:0px;
+    margin-top:0px;
+
+    }
+    iframe{
+        width: 325px;
+        height: 200px;
+        margin-left:15px;
+        margin-top:60px; 
+        border: 2px solid white;
+    }
+    table td{
+        display: block;
+    }
+    .description{
+        width: 335px;
+        margin:10px;
+    }
+}
+
+@media screen and (min-width:361px) and (max-width:375px){
+    table{
+    margin-left:0px;
+    margin-top:0px;
+
+    }
+    iframe{
+        width: 340px;
+        height: 200px;
+        margin-left:15px;
+        margin-top:40px; 
+        border: 2px solid white;
+    }
+    table td{
+        display: block;
+    }
+    .description{
+        width: 350px;
+        margin:10px;
+    }
+    footer{
+        margin-top:68px;
+    }
+}
+
+@media screen and (min-width:378px) and (max-width:411px){
+    table{
+    margin-left:0px;
+    margin-top:0px;
+
+    }
+    iframe{
+        width: 375px;
+        height: 200px;
+        margin-left:15px;
+        margin-top:20px; 
+        border: 2px solid white;
+    }
+    table td{
+        display: block;
+    }
+    .description{
+        width: 380px;
+        margin:10px;
+    }
+    footer{
+        margin-top:85px;
+    }
+}
+
+@media screen and (min-width:412px) and (max-width:414px){
+    table{
+    margin-left:0px;
+    margin-top:0px;
+
+    }
+    iframe{
+        width: 375px;
+        height: 200px;
+        margin-left:15px;
+        margin-top:5px; 
+        border: 2px solid white;
+    }
+    table td{
+        display: block;
+    }
+    .description{
+        width: 380px;
+        margin:10px;
+    }
+}
+
+
+@media screen and (min-width:415px) and (max-width:768px){
+    footer{
+        margin-top:234px;
+    }
+    table{
+    margin-left:0px;
+    margin-top:0px;
+
+    }
+    iframe{
+        width: 730px;
+        height: 400px;
+        margin-left:15px;
+        margin-top:-130px; 
+        border: 2px solid white;
+    }
+    table td{
+        display: block;
+    }
+    .description{
+        width: 720px;
+        margin:20px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1024px){
+    footer{
+        margin-top:474px;
+    }
+    table{
+    margin-left:20px;
+    margin-top:20px;
+
+    }
+    table td{
+        display: block;
+    }
+    iframe{
+        width: 930px;
+        height: 510px;
+        margin-left:25px;
+        margin-top:-160px; 
+        border: 2px solid white;
+    }
+
+    .description{
+        width: 930px;
+        margin:20px;
+    }
+}
+
+@media screen and (min-width:1025px){
+    table{
+    margin-left:100px;
+    margin-top:50px;
+
+    }
+    iframe{
+        width: 730px;
+        height: 380px;
+        margin-left:35px;
+        margin-top:30px; 
+        border: 2px solid white;
+    }
+
+    .description{
+        margin:20px;
+    }
+}
+ 

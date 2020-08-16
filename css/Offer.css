@@ -1,0 +1,816 @@
+* {
+  margin: 0;
+}
+
+.wrapper {
+  display: grid;
+  margin-left: 245px;
+  margin-top: 10px;
+  grid-template-columns: repeat(4, [col] 200px);
+  grid-template-rows: repeat(2, [row] auto);
+}
+
+.first {
+  grid-column: col / span 2;
+  grid-row: row 2;
+  width: 380px;
+  height: 480px;
+  position: relative;
+}
+
+.first .firstImage,
+.first .firstback {
+  width: 380px;
+  height: 480px;
+  position: absolute;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.first .firstImage {
+  background: url("../images/Ame.jpeg") center;
+  background-size: cover;
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 2;
+}
+
+.first .firstback {
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 1;
+  padding-top: 45px;
+  line-height: 25px;
+  font-size: 13px;
+}
+
+.first:hover .firstImage {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.first:hover .firstback {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+.secondBox {
+  grid-column: col 3 / span 2;
+  grid-row: row 2;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.second {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  width: 460px;
+  height: 210px;
+  position: relative;
+}
+
+.second .secondImage,
+.second .secondback {
+  width: 460px;
+  height: 210px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.second .secondImage {
+  background: url("../images/dubai_Offer.webp") center;
+  background-size: cover;
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 2;
+}
+
+.second .secondback {
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.second:hover .secondImage {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.second:hover .secondback {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+.third {
+  grid-column: 1;
+  grid-row: 2;
+  width: 230px;
+  height: 260px;
+  position: relative;
+}
+
+.third .thirdImage,
+.third .thirdback {
+  width: 230px;
+  height: 260px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.third .thirdImage {
+  background: url("../images/IndiaOffer.webp") center;
+  background-size: cover;
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 2;
+}
+
+.third .thirdback {
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.third:hover .thirdImage {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.third:hover .thirdback {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+.fourth {
+  grid-column: 2;
+  grid-row: 2;
+  width: 220px;
+  height: 260px;
+  position: relative;
+}
+
+.fourth .fourthImage,
+.fourth .fourthback {
+  width: 220px;
+  height: 260px;
+  position: absolute;
+  backface-visibility: hidden;
+  transition: 1s;
+}
+
+.fourth .fourthImage {
+  background: url("../images/ParisOffer.jpeg") center top;
+  background-size: cover;
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 2;
+}
+
+.fourth .fourthback {
+  transform: perspective(1000px) rotateY(180deg);
+  z-index: 1;
+  font-family: "Montserrat", sans-serif;
+  text-align: justify;
+  line-height: 20px;
+  font-size: 13px;
+}
+
+.fourth:hover .fourthImage {
+  transform: perspective(1000px) rotateY(-180deg);
+  z-index: 2;
+}
+
+.fourth:hover .fourthback {
+  transform: perspective(1000px) rotateY(0deg);
+  z-index: 1;
+}
+
+.fourthImage img {
+  width: 100%;
+  height: 280px;
+}
+
+.discountTag {
+  color: white;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 40px;
+  position: absolute;
+  width: 98%;
+}
+
+.secText {
+  width: 160px;
+  text-align: center;
+  padding: 20px;
+  font-size: 22px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 260px;
+  margin-top: 20px;
+  border: 5px double white;
+}
+
+.thirdText {
+  width: 80px;
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-left: 60px;
+  margin-top: 55px;
+}
+
+.fourthText {
+  width: 80px;
+  padding: 10px;
+  font-size: 18px;
+  color: white;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin-left: 120px;
+  margin-top: 0px;
+}
+
+.pinkBox {
+  overflow: auto;
+  position: absolute;
+  top: 315px;
+  left: 0px;
+  width: 100%;
+  height: 40%;
+  display: inline-block;
+  box-sizing: border-box;
+  transform-origin: top left;
+}
+
+.firstCol {
+  padding-left: 30px;
+}
+
+.redCol {
+  color: rgb(160, 14, 14);
+  font-weight: 600;
+}
+
+@media screen and (min-width: 0px) and (max-width: 320px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    display: grid;
+    margin-left: 0px;
+    margin-top: 0px;
+    grid-template-columns: repeat(1, [col] auto);
+    grid-template-rows: repeat(4, [row] auto);
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-gap: 30px;
+  }
+  .first {
+    grid-column: 1;
+    grid-row: 1;
+    width: 270px;
+    height: 500px;
+    position: relative;
+    margin: 25px;
+  }
+  .first .firstImage,
+  .first .firstback {
+    width: 270px;
+    height: 500px;
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .second .secondImage,
+  .second .secondback {
+    width: 270px;
+    height: 300px;
+    margin: 25px;
+  }
+  .secText {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 90px;
+    margin-top: 20px;
+    border: 5px double white;
+  }
+  .third {
+    margin-top: 110px;
+    grid-column: 1;
+    grid-row: 3;
+    width: 270px;
+    height: 260px;
+    position: relative;
+  }
+  .third .thirdImage,
+  .third .thirdback {
+    width: 270px;
+    height: 260px;
+    margin: 25px;
+  }
+  .fourth {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    grid-column: 1;
+    grid-row: 4;
+    width: 270px;
+    height: 260px;
+    position: relative;
+  }
+
+  .fourth .fourthImage,
+  .fourth .fourthback {
+    width: 270px;
+    height: 260px;
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 360px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    display: grid;
+    margin-left: 0px;
+    margin-top: 0px;
+    grid-template-columns: repeat(1, [col] auto);
+    grid-template-rows: repeat(4, [row] auto);
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-gap: 30px;
+  }
+  .first {
+    grid-column: 1;
+    grid-row: 1;
+    width: 310px;
+    height: 500px;
+    position: relative;
+    margin: 25px;
+  }
+  .first .firstImage,
+  .first .firstback {
+    width: 310px;
+    height: 500px;
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .second .secondImage,
+  .second .secondback {
+    width: 310px;
+    height: 300px;
+    margin: 25px;
+  }
+  .secText {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 90px;
+    margin-top: 20px;
+    border: 5px double white;
+  }
+  .third {
+    margin-top: 110px;
+    grid-column: 1;
+    grid-row: 3;
+    width: 310px;
+    height: 260px;
+    position: relative;
+  }
+  .third .thirdImage,
+  .third .thirdback {
+    width: 310px;
+    height: 260px;
+    margin: 25px;
+  }
+  .fourth {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    grid-column: 1;
+    grid-row: 4;
+    width: 310px;
+    height: 260px;
+    position: relative;
+  }
+
+  .fourth .fourthImage,
+  .fourth .fourthback {
+    width: 310px;
+    height: 260px;
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 361px) and (max-width: 375px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    display: grid;
+    margin-left: 0px;
+    margin-top: 0px;
+    grid-template-columns: repeat(1, [col] auto);
+    grid-template-rows: repeat(4, [row] auto);
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-gap: 30px;
+  }
+  .first {
+    grid-column: 1;
+    grid-row: 1;
+    width: 325px;
+    height: 450px;
+    position: relative;
+    margin: 25px;
+  }
+  .first .firstImage,
+  .first .firstback {
+    width: 325px;
+    height: 450px;
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .second .secondImage,
+  .second .secondback {
+    width: 325px;
+    height: 260px;
+    margin: 25px;
+  }
+  .secText {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 90px;
+    margin-top: 20px;
+    border: 5px double white;
+  }
+  .third {
+    margin-top: 70px;
+    grid-column: 1;
+    grid-row: 3;
+    width: 325px;
+    height: 260px;
+    position: relative;
+  }
+  .third .thirdImage,
+  .third .thirdback {
+    width: 325px;
+    height: 260px;
+    margin: 25px;
+  }
+  .fourth {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    grid-column: 1;
+    grid-row: 4;
+    width: 325px;
+    height: 260px;
+    position: relative;
+  }
+
+  .fourth .fourthImage,
+  .fourth .fourthback {
+    width: 325px;
+    height: 260px;
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 376px) and (max-width: 411px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    display: grid;
+    margin-left: 0px;
+    margin-top: 0px;
+    grid-template-columns: repeat(1, [col] auto);
+    grid-template-rows: repeat(4, [row] auto);
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-gap: 30px;
+  }
+  .first {
+    grid-column: 1;
+    grid-row: 1;
+    width: 355px;
+    height: 450px;
+    position: relative;
+    margin: 25px;
+  }
+  .first .firstImage,
+  .first .firstback {
+    width: 355px;
+    height: 450px;
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .second .secondImage,
+  .second .secondback {
+    width: 355px;
+    height: 260px;
+    margin: 25px;
+  }
+  .secText {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 90px;
+    margin-top: 20px;
+    border: 5px double white;
+  }
+  .third {
+    margin-top: 70px;
+    grid-column: 1;
+    grid-row: 3;
+    width: 355px;
+    height: 260px;
+    position: relative;
+  }
+  .third .thirdImage,
+  .third .thirdback {
+    width: 355px;
+    height: 260px;
+    margin: 25px;
+  }
+  .fourth {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    grid-column: 1;
+    grid-row: 4;
+    width: 355px;
+    height: 260px;
+    position: relative;
+  }
+
+  .fourth .fourthImage,
+  .fourth .fourthback {
+    width: 355px;
+    height: 260px;
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 412px) and (max-width: 414px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    display: grid;
+    margin-left: 0px;
+    margin-top: 0px;
+    grid-template-columns: repeat(1, [col] auto);
+    grid-template-rows: repeat(4, [row] auto);
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-gap: 30px;
+  }
+  .first {
+    grid-column: 1;
+    grid-row: 1;
+    width: 365px;
+    height: 450px;
+    position: relative;
+    margin: 25px;
+  }
+  .first .firstImage,
+  .first .firstback {
+    width: 365px;
+    height: 450px;
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .second .secondImage,
+  .second .secondback {
+    width: 365px;
+    height: 260px;
+    margin: 25px;
+  }
+  .secText {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 90px;
+    margin-top: 20px;
+    border: 5px double white;
+  }
+  .third {
+    margin-top: 70px;
+    grid-column: 1;
+    grid-row: 3;
+    width: 365px;
+    height: 260px;
+    position: relative;
+  }
+  .third .thirdImage,
+  .third .thirdback {
+    width: 365px;
+    height: 260px;
+    margin: 25px;
+  }
+  .fourth {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    grid-column: 1;
+    grid-row: 4;
+    width: 365px;
+    height: 260px;
+    position: relative;
+  }
+
+  .fourth .fourthImage,
+  .fourth .fourthback {
+    width: 365px;
+    height: 260px;
+    margin: 25px;
+  }
+}
+@media screen and (min-width: 415px) and (max-width: 768px) {
+  footer {
+    margin-top: 20px;
+  }
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  .wrapper {
+    display: grid;
+    margin-left: 0px;
+    margin-top: 0px;
+    grid-template-columns: repeat(1, [col] auto);
+    grid-template-rows: repeat(4, [row] auto);
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 3;
+    display: grid;
+    grid-gap: 30px;
+  }
+  .first {
+    grid-column: 1;
+    grid-row: 1;
+    width: 710px;
+    height: 350px;
+    position: relative;
+    margin: 25px;
+  }
+  .first .firstImage,
+  .first .firstback {
+    width: 710px;
+    height: 350px;
+  }
+  .secondBox {
+    grid-column: 1;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .second .secondImage,
+  .second .secondback {
+    width: 710px;
+    height: 350px;
+    margin: 25px;
+  }
+  .secText {
+    width: 150px;
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    margin-left: 90px;
+    margin-top: 20px;
+    border: 5px double white;
+  }
+  .third {
+    margin-top: 170px;
+    grid-column: 1;
+    grid-row: 3;
+    width: 365px;
+    height: 350px;
+    position: relative;
+  }
+  .third .thirdImage,
+  .third .thirdback {
+    width: 710px;
+    height: 350px;
+    margin: 25px;
+  }
+  .fourth {
+    margin-top: 30px;
+    margin-bottom: 30px;
+
+    grid-column: 1;
+    grid-row: 4;
+    width: 710px;
+    height: 350px;
+    position: relative;
+  }
+
+  .fourth .fourthImage,
+  .fourth .fourthback {
+    width: 710px;
+    height: 350px;
+    margin: 25px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .wrapper {
+    margin-left: 80px;
+    margin-top: 80px;
+  }
+  footer {
+    margin-top: 715px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .wrapper {
+    margin-left: 245px;
+    margin-top: 30px;
+  }
+  footer {
+    margin-top: 67px;
+  }
+  html,
+  body {
+    overflow-y: hidden;
+  }
+}

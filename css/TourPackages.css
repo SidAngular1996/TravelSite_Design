@@ -1,0 +1,167 @@
+* {
+	margin: 0;
+}
+table{
+    margin-top:20px;
+    margin-left: 85px;
+    margin-bottom: 30px;
+    /* width: 1200px; */
+    /* border-collapse:collapse; */
+}
+
+main{
+    margin-top:40px;
+}
+footer{
+    margin-top:85px;
+}
+
+@media screen and (min-width:1025px){
+    table{
+        margin-top:20px;
+        margin-left: 85px;
+        margin-bottom: 30px;
+        width: 1200px;
+    }
+    .head{
+        margin-left:90px;
+    }
+    .tag{
+        margin-right: 83px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width: 1024px) {
+    table{
+        margin-top:20px;
+        margin-left: 45px;
+        margin-bottom: 30px;
+        width: 940px;
+    }
+    .head{
+        margin-left:50px;
+    }
+    .tag{
+        margin-right:43px;
+    }
+    footer{
+        margin-top:711px;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width: 768px) {
+    table{
+        margin-top:20px;
+        margin-left: 35px;
+        margin-bottom: 30px;
+        width: 700px;
+    }
+    .head{
+        margin-left:40px;
+    }
+    .tag{
+        margin-right:33px;
+    }
+    footer{
+        margin-top:226px;
+    }
+}
+
+@media screen and (min-width:415px) and (max-width: 768px) {
+    table{
+        margin-top:20px;
+        margin-left: 35px;
+        margin-bottom: 30px;
+        width: 700px;
+    }
+    .head{
+        margin-left:40px;
+    }
+    .tag{
+        margin-right:33px;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width: 414px) {
+    table{
+        margin-top:10px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: fit-content;
+        display: block;
+        max-width: 94%;
+        overflow-x: auto;
+    }
+    .head{
+        margin-left:10px;
+    }
+    .tag{
+        margin-right: 10px;
+        margin-top: -10px;
+    }
+    
+}
+
+
+.wc{
+    width:80px;
+}
+table tr {
+    padding: 5px,5px;
+    border:none;
+}
+
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+    font-family:'Montserrat', sans-serif;
+    font-size:14px;
+    border:none;
+}
+
+th{
+    background-color: rgb(141, 78, 78);
+    color: white;
+}
+
+table tr{
+    background-color: #a0a0a0;
+
+}
+
+
+/* td{
+    border-bottom:2px solid white;
+    border-top:2px solid white;
+} */
+
+.alt1{
+    color: rgb(121,62,62);
+    background-color:  rgb(243, 226, 226) ;
+}
+
+.alt2{
+    background-color: rgb(204, 163, 163);
+
+    color: rgb(121,62,62);
+}
+
+.tag{
+    float:right;
+    /* margin-top:-20px; */
+    color: rgb(121,62,62);
+    font-family:'Montserrat', sans-serif;
+    font-size:12px;
+}
+
+.head{
+    /* margin-left: 90px; */
+    color: rgb(121,62,62);
+    font-family:'Montserrat', sans-serif;
+    font-weight: 600;
+    font-size:16px;
+}
+
